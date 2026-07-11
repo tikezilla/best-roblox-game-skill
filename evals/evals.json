@@ -1,0 +1,48 @@
+{
+  "skill_name": "roblox-game",
+  "version": "2.0.0",
+  "evals": [
+    {
+      "id": "cac-route",
+      "prompt": "Build my Congressional App Challenge project in Roblox",
+      "should_trigger": true,
+      "expected_references": ["workflows/congressional-app-challenge.md", "references/visual-direction-ux.md"]
+    },
+    {
+      "id": "existing-recovery-route",
+      "prompt": "Inspect this old Roblox project and tell me what can be reused",
+      "should_trigger": true,
+      "expected_references": ["workflows/existing-project-recovery.md", "references/mcp-orchestration.md"]
+    },
+    {
+      "id": "professional-ui-route",
+      "prompt": "Make this menu feel professionally designed and animated",
+      "should_trigger": true,
+      "expected_references": ["references/gui-systems.md", "references/visual-direction-ux.md"]
+    },
+    {
+      "id": "current-api-route",
+      "prompt": "Is this Roblox API still current?",
+      "should_trigger": true,
+      "expected_references": ["references/current-platform-lookup.md"]
+    },
+    {
+      "id": "multi-studio-route",
+      "prompt": "Fix the selected Studio project but use the second window only as reference",
+      "should_trigger": true,
+      "expected_references": ["references/mcp-orchestration.md"],
+      "expected_concepts": ["Multiple Roblox Studio Sessions"]
+    },
+    {
+      "id": "roblox-positive-trigger",
+      "prompt": "Add a ProfileStore save system for my Roblox obby",
+      "should_trigger": true,
+      "expected_references": ["references/datastore-persistence.md"]
+    },
+    {
+      "id": "non-roblox-negative-trigger",
+      "prompt": "Create a React login page for my website",
+      "should_trigger": false
+    }
+  ]
+}
