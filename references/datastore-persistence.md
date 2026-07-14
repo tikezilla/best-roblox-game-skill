@@ -14,7 +14,7 @@ Use this reference for DataStoreService, ProfileStore, leaderstats, player profi
 
 ## When To Skip Persistence
 
-For a short prototype, civic simulator, classroom demo, or Congressional App Challenge vertical slice, ask whether progress must survive rejoin. If the answer is no, keep state in memory and focus on the playable experience, UX, and explainable systems.
+For a short prototype or contained vertical slice, ask whether progress must survive rejoin. If the answer is no, keep state in memory and focus on the playable experience and UX.
 
 ## ProfileStore Player Profile Pattern
 

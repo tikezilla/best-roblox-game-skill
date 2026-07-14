@@ -1,6 +1,6 @@
 # Workflow: Existing Project Recovery
 
-Use this workflow for old, broken, inherited, or interdependent Roblox projects.
+Use this workflow for old, broken, inherited, interdependent, decompiled, or partially rewritten Roblox projects. For deeper behavior inference, pair it with `references/reverse-engineered-recovery.md`.
 
 ## Hard Rule
 
@@ -17,7 +17,7 @@ Do not respond to a broken inherited project by proposing a total rewrite before
 7. Pick one playable vertical slice.
 8. Repair that slice without rewriting unrelated systems.
 9. Test it.
-10. Record what can be reused in the competition app or future project.
+10. Record recovered contracts, confidence tags, and the next evidence needed for unresolved behavior.
 
 ## Inventory Checklist
 
@@ -29,6 +29,13 @@ Do not respond to a broken inherited project by proposing a total rewrite before
 - `ServerStorage` hidden assets and modules
 - DataStore/ProfileStore ownership
 - Third-party packages and suspicious inserted assets
+
+## Authority Rules
+
+- Treat active current services and runtime behavior as canonical.
+- Treat `.legacy`, `[OLD]`, duplicate, and decompiled scripts as evidence until their active load path is proven.
+- When a backend has been rewritten, recover missing behavior behind the new service boundary instead of restoring the old server script wholesale.
+- Preserve existing remote names, payload shapes, object names, and serialized formats when current callers depend on them.
 
 ## Report Format
 

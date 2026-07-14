@@ -1,6 +1,6 @@
 # Visual Direction and UX
 
-Use this reference for professional Roblox UI, UX, animation, sound feedback, menus, HUDs, onboarding, competition polish, and visual identity.
+Use this reference for professional Roblox UI, UX, animation, sound feedback, menus, HUDs, onboarding, and visual identity.
 
 ## Visual Direction Brief
 

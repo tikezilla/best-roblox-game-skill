@@ -1,11 +1,11 @@
 ---
 name: roblox-game
-description: Expert Roblox development skill for Codex and compatible agents. Use for Roblox Studio, Luau, MCP-assisted game building, debugging, UI/UX polish, data persistence, competition projects, existing project recovery, security, performance, monetization, file formats, assets, Rojo, DataStoreService, ProfileStore, RemoteEvent, RemoteFunction, ServerScriptService, ReplicatedStorage, StarterGui, Roblox Engine APIs, and Congressional App Challenge Roblox projects. Do not use for Unity, Unreal, Godot, web apps, or non-Roblox scripting unless the user is explicitly comparing them to Roblox.
+description: Expert Roblox development skill for Codex and compatible agents. Use for Roblox Studio, Luau, MCP-assisted game building, debugging, UI/UX polish, data persistence, existing-project recovery, reverse-engineered or decompiled scripts, rewritten server backends, security, performance, monetization, file formats, assets, Rojo, DataStoreService, ProfileStore, RemoteEvent, RemoteFunction, ServerScriptService, ReplicatedStorage, StarterGui, and Roblox Engine APIs. Do not use for Unity, Unreal, Godot, web apps, or non-Roblox scripting unless the user is explicitly comparing them to Roblox.
 ---
 
 # Roblox Game Development Skill
 
-Use this skill as a Codex-first Roblox development companion. Prefer the existing project shape, inspect before changing, and build working vertical slices that the user can test and explain.
+Use this skill as a Codex-first Roblox development companion. Prefer the existing project shape, inspect before changing, and build working vertical slices that the user can test. For inherited, decompiled, or partially rewritten projects, reconstruct behavior from evidence before changing architecture.
 
 ## Roblox Studio MCP Detection
 
@@ -45,8 +45,9 @@ Match user intent and load the corresponding files before generating code or mod
 |---|---|
 | Build a new game or prototype | `workflows/new-game.md` + `templates/game-scaffold.md` |
 | Build a known genre system | `workflows/new-game.md` + `templates/genre-{type}.md` + `templates/game-scaffold.md` |
-| Congressional App Challenge project | `workflows/congressional-app-challenge.md` + `references/visual-direction-ux.md` |
-| Recover or understand an existing game | `workflows/existing-project-recovery.md` + `references/mcp-orchestration.md` |
+| Recover or understand an existing game | `workflows/existing-project-recovery.md` + `references/reverse-engineered-recovery.md` + `references/mcp-orchestration.md` |
+| Infer missing behavior from decompiled or mangled scripts | `workflows/reverse-engineered-recovery.md` + `references/reverse-engineered-recovery.md` + `references/mcp-orchestration.md` |
+| Reconcile a rewritten backend with legacy server behavior | `workflows/reverse-engineered-recovery.md` + `references/reverse-engineered-recovery.md` + `references/security-hardening.md` |
 | Fix bug / debug | `workflows/debug-loop.md` + `references/mcp-orchestration.md` |
 | Professional UI, UX, animation, or visual identity | `references/gui-systems.md` + `references/visual-direction-ux.md` |
 | Current or uncertain Roblox API | `references/current-platform-lookup.md` |
@@ -64,13 +65,12 @@ Match user intent and load the corresponding files before generating code or mod
 | Ready to publish | `workflows/publish-checklist.md` |
 | Review monetization | `workflows/monetization-audit.md` |
 | Review code quality | `workflows/code-review.md` |
-| Competition polish audit | `workflows/competition-polish-audit.md` + `references/visual-direction-ux.md` |
 | Animation / VFX | `references/animation-vfx.md` |
 | Multiplayer / networking | `references/multiplayer-networking.md` |
 | Testing | `references/testing-patterns.md` |
 | Inventory / items | `references/inventory-systems.md` |
 
-If intent is ambiguous, ask one clarifying question, then route. If the user names a competition, deadline, judging, school project, civic app, or demo video, prefer the Congressional App Challenge route.
+If intent is ambiguous, route from the repository evidence and state the confidence of important inferences. Ask only when the missing information makes a destructive or high-risk change unsafe.
 
 ## Operating Rules
 
@@ -84,7 +84,11 @@ If intent is ambiguous, ask one clarifying question, then route. If the user nam
 - Ask for approval before deleting substantial work, replacing architecture, or changing the core product concept.
 - Do not pause for approval between routine implementation steps.
 - Do not blindly force a genre template onto a custom project.
-- Explain major architectural decisions in language the student can later explain to a judge.
+- Explain major architectural decisions in language the project owner can verify and maintain.
+- Keep an evidence ledger for recovered behavior: `Observed`, `Inferred`, or `Speculative`.
+- Treat an active rewritten backend as the canonical authority; mine legacy or decompiled server scripts for missing behavior, not for wholesale restoration.
+- Trace every important behavior across client call sites, remotes, server handlers, services, state mutation, persistence, and client feedback before implementing it.
+- Preserve action names, payload shapes, object names, and odd compatibility behaviors when existing call sites depend on them.
 - Use official Roblox documentation when an API, beta feature, limit, or deprecation may have changed.
 
 ## Core Quick Reference

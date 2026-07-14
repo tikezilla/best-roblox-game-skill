@@ -27,7 +27,7 @@ Use binary formats for normal Studio saves and XML formats when diffability or t
 - Prefer Roblox Studio's Universal Importer for external 3D assets.
 - Use Asset Manager to track uploaded images, meshes, audio, videos, and packages.
 - Creator Store assets can accelerate prototyping, but inspect scripts for unknown or obfuscated code before inserting into a real project.
-- For competition work, document third-party assets and AI-generated assets in the project log.
+- For asset-heavy or recovered work, document third-party assets, generated assets, provenance, and known licensing constraints in the project log.
 
 ## Export Rules
 

@@ -1,7 +1,7 @@
 {
   "skill_name": "roblox-game",
-  "version": "2.0.0",
-  "last_updated": "2026-07-11",
+  "version": "2.1.0",
+  "last_updated": "2026-07-13",
   "last_updated_by": "Codex hybrid implementation",
   "compatibility_target": "Codex-first plus generic Skills compatibility",
   "sources": [
@@ -19,18 +19,18 @@
       "name": "Roblox Creator Documentation",
       "url": "https://create.roblox.com/docs",
       "usage": "Priority source for current Roblox APIs, Studio MCP, UI styling, Engine API, and Open Cloud distinctions"
-    },
-    {
-      "name": "Congressional App Challenge 2026 Rules",
-      "url": "https://www.congressionalappchallenge.us/wp-content/uploads/2026/05/2026-CAC-Rules.pdf",
-      "usage": "AI disclosure, student contribution, demo, source access, and judging guidance"
     }
   ],
   "update_history": [
     {
       "date": "2026-07-11",
       "version": "2.0.0",
-      "changes": "Hybrid Codex update: capability-based Studio MCP orchestration, ProfileStore-first persistence, custom/competition-first workflows, CAC disclosure workflow, existing project recovery, visual direction UX, current platform lookup, asset format guidance, Codex metadata, evals, and third-party notices."
+      "changes": "Hybrid Codex update: capability-based Studio MCP orchestration, ProfileStore-first persistence, custom-first workflows, existing project recovery, visual direction UX, current platform lookup, asset format guidance, Codex metadata, evals, and third-party notices."
+    },
+    {
+      "date": "2026-07-13",
+      "version": "2.1.0",
+      "changes": "Removed competition-specific routing and materials. Added reverse-engineered recovery and server-backend inference guidance for decompiled or partially rewritten Roblox projects."
     }
   ]
 }

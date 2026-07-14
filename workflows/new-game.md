@@ -1,12 +1,10 @@
 # Workflow: New Game Creation
 
-Use this workflow when the user wants to build a new Roblox game, app, prototype, simulator, school project, or custom experience.
+Use this workflow when the user wants to build a new Roblox game, app, prototype, simulator, or custom experience.
 
 ## Default Behavior
 
 Start with the concept, not the genre. Genre templates are tools, not identities. Use a simulator, tycoon, obby, RPG, horror, or battle-royale template only when it clearly matches part of the user's app.
-
-For Congressional App Challenge or civic/school competition projects, route to `workflows/congressional-app-challenge.md` first.
 
 ## Step 1: Concept Brief
 
@@ -18,7 +16,7 @@ Define:
 4. Five-minute playable experience
 5. Visual tone
 6. Data needs, if any
-7. Three systems the user can explain
+7. Three systems the project owner can verify and maintain
 
 If the user already gave these details, summarize them and proceed. If a high-impact detail is missing, ask one concise question.
 

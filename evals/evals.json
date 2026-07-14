@@ -3,10 +3,17 @@
   "version": "2.0.0",
   "evals": [
     {
-      "id": "cac-route",
-      "prompt": "Build my Congressional App Challenge project in Roblox",
+      "id": "decompiled-recovery-route",
+      "prompt": "Infer the missing server behavior from these mangled decompiled Roblox scripts",
       "should_trigger": true,
-      "expected_references": ["workflows/congressional-app-challenge.md", "references/visual-direction-ux.md"]
+      "expected_references": ["workflows/reverse-engineered-recovery.md", "references/reverse-engineered-recovery.md", "references/mcp-orchestration.md"],
+      "expected_concepts": ["Observed/Inferred/Speculative confidence", "server backend authority", "client/server contract tracing"]
+    },
+    {
+      "id": "rewritten-backend-route",
+      "prompt": "Compare my rewritten Roblox backend with the old handlers and recover missing behavior",
+      "should_trigger": true,
+      "expected_references": ["workflows/reverse-engineered-recovery.md", "references/reverse-engineered-recovery.md", "references/security-hardening.md"]
     },
     {
       "id": "existing-recovery-route",

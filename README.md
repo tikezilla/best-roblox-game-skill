@@ -9,7 +9,8 @@ This hybrid keeps the broad structure of Brock Martin's original `roblox-game-sk
 - Builds Roblox games and prototypes from concept briefs and playable vertical slices.
 - Uses capability-based Roblox Studio MCP orchestration instead of fixed tool inventories.
 - Recovers and maps inherited or broken projects before suggesting rewrites.
-- Supports Congressional App Challenge workflows with AI disclosure and student contribution logs.
+- Recovers inherited, decompiled, and partially rewritten projects by tracing behavior across scripts and runtime boundaries.
+- Reconciles a rewritten server backend with legacy behavior without restoring damaged code wholesale.
 - Guides ProfileStore-first persistence and clearly separates raw DataStore prototype use.
 - Provides professional UI/UX, visual direction, asset format, migration, security, performance, and game design references.
 
@@ -36,9 +37,8 @@ roblox-game/
 |-- workflows/
 |   |-- new-game.md
 |   |-- debug-loop.md
-|   |-- congressional-app-challenge.md
 |   |-- existing-project-recovery.md
-|   |-- competition-polish-audit.md
+|   |-- reverse-engineered-recovery.md
 |   `-- existing Brock workflows...
 `-- templates/
     `-- existing Brock templates...
@@ -46,7 +46,7 @@ roblox-game/
 
 ## Install For Codex
 
-After updates are merged into `main`, install or refresh with:
+For a normal global Codex install, refresh with:
 
 ```powershell
 npx skills add tikezilla/best-roblox-game-skill --agent codex --copy -y
@@ -54,10 +54,13 @@ npx skills add tikezilla/best-roblox-game-skill --agent codex --copy -y
 
 Because this uses `--copy`, rerun the command after major repository updates.
 
+For a project-only install, use the Codex skill installer with `--dest <project>/.agents/skills`, `--ref codex/bbai26-reconstruction`, and `--name roblox-game`. This keeps the tailored branch scoped to that project instead of changing the global skill set.
+
 ## Usage Examples
 
-- "Build my Congressional App Challenge project in Roblox."
 - "Inspect this old Roblox project and tell me what can be reused."
+- "Infer the missing server behavior from these decompiled Roblox scripts."
+- "Compare my rewritten backend with the old handlers and recover the missing contract."
 - "Make this menu feel professionally designed and animated."
 - "Fix this Studio project, but use the second open Studio window only as reference."
 - "Add ProfileStore persistence for player progress."

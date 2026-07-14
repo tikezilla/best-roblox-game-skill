@@ -1,6 +1,6 @@
 # Current Roblox Platform Lookup
 
-Use this reference when an API, property, MCP capability, beta feature, limit, deprecation, policy, or competition rule may have changed.
+Use this reference when an API, property, MCP capability, beta feature, limit, deprecation, or platform policy may have changed.
 
 ## Source Priority
 
@@ -16,7 +16,7 @@ Use this reference when an API, property, MCP capability, beta feature, limit, d
 - Look up uncertain APIs before writing implementation code.
 - Separate Roblox Engine APIs from Open Cloud APIs.
 - Check deprecation status when modifying older projects.
-- Treat hardcoded limits, platform statistics, policy dates, and competition deadlines as time-sensitive.
+- Treat hardcoded limits, platform statistics, policy dates, and rollout status as time-sensitive.
 - When documentation and an existing project disagree, report the conflict before changing working code.
 - Prefer official per-page markdown or API reference pages when available.
 

@@ -1,7 +1,7 @@
 interface:
   display_name: "Roblox Game"
-  short_description: "Build, debug, and polish Roblox experiences"
-  default_prompt: "Use $roblox-game to build, debug, or improve a Roblox experience with Studio-aware workflows."
+  short_description: "Build and recover Roblox experiences"
+  default_prompt: "Use $roblox-game to build, debug, recover, or improve a Roblox experience with Studio-aware workflows."
 
 policy:
   allow_implicit_invocation: true
